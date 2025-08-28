@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm start --prefix front-end",
-    "client-install": "npm install --prefix front-end",
-    "build": "npm install --prefix front-end && npm run build --prefix front-end"
-  },
+  "start": "node index.js",
+  "server": "nodemon index.js",
+  "client": "npm start --prefix front-end",
+  "client-install": "npm install --prefix front-end",
+  "build": "npm install --prefix front-end && npm run build --prefix front-end",
+  "heroku-postbuild": "npm install --prefix front-end && npm run build --prefix front-end"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
